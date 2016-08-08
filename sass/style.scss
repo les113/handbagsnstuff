@@ -1,0 +1,448 @@
+@import "compass/css3"; //calls compass mixims
+@import 'variables'; 
+
+/* fonts */ 
+
+body { 
+    font-family: $standardFontFamily;
+	color:$bodyFont; 
+}
+h1, h2, h3, h4, h4, h5, h6 {
+    font-family: $headingFontFamily; 
+    letter-spacing: 1px;
+	margin:20px 0;
+}
+
+h1 {font-size: 2.4rem; color:$emphasisColour;} // 2.4rem = 24px
+h2 {font-size: 2.0rem; color:$emphasisColour;}
+h3 {font-size: 1.8rem; color:$bodyFont;}
+h4 {font-size: 1.6rem;}
+h5 {font-size: 1.4rem;}
+h6 {font-size: 1.2rem;}
+p, li {font-size: 1.4rem;} 
+a {	color:$link;}
+
+/* content */
+
+#content { 
+    min-height:500px;
+	li {
+    //list-style-type: none;
+	} 
+}
+
+
+
+/* misc */
+
+section {
+	margin:10px 0;
+	}
+.marginTop {
+    margin-top:20px;
+}
+.marginBottom {
+    margin-bottom:20px;
+}
+.picleft img {
+    float:left; 
+    margin-right:20px;
+}
+.picright img {
+    float:right; 
+    margin-left:20px;
+}
+.clearfix {
+    clear:both;
+}
+.textRight {
+	text-align:right;
+	}
+.textLeft {
+	text-align:left;
+	}
+.textCenter {
+	text-align:center;
+}
+
+/* wraps */
+
+.wrapTopmenu{
+    background:$primaryColour;
+}
+.wrapMainmenu {
+    background: #fff;
+	height:52px; 
+}
+.wrapFooter {
+    background: #fff;
+}
+
+/* slideshow */
+
+.slideshow {
+	position:relative;
+	// metaslider plugin
+	.metaslider .caption-wrap {
+		opacity:1; //reset plugins opacity
+		background: rgba(1,1,1,0.4);//apply new opacity
+		top:0;
+	}
+	.caption {
+		color:$primaryColourText;
+		font-size:48px;
+		font-family: $headingFontFamily; 
+		line-height:60px;
+		width:100%;
+		text-align:center;
+		position:absolute;
+		top:35%;
+	}
+	.shopbtnwrap {
+		position:absolute;
+		top:60%;
+		width:100%;
+		text-align:center;
+	}
+	.shopbtn{
+		width:160px;
+		margin:0 auto;
+		border:1px solid white;
+	}
+	.shopbtn h2{
+		margin:10px 20px;
+		color:$primaryColourText;
+	}
+	.shopbtn a:hover{
+		text-decoration:none;
+	}
+	// slide pager control
+	.flex-control-paging li a.flex-active, 	.flex-control-paging li a:hover {
+		background:$primaryColour;
+	}
+	.flex-control-paging li a {
+		background:white;
+	}
+	ol.flex-control-nav.flex-control-paging {
+    position: absolute;
+    bottom: 20px;
+    z-index: 99;
+	}
+}
+	// fixed hero image
+.slideshow {
+	.heroimage {
+		background: no-repeat center center fixed; 
+		  -webkit-background-size: cover;
+		  -moz-background-size: cover;
+		  -o-background-size: cover;
+		background-size: cover;
+		height:500px;
+		background:rgba(1,1,1,0.4);
+	}	
+	.caption {
+		top:20%;
+	}
+}
+
+
+
+// dimmed overlay for cat images
+.dimmed {
+  position: relative;
+}
+
+.dimmed:before {
+  content: " ";
+  z-index: 10;
+  display: block;
+  position: absolute;
+  height: 100%;
+  top: 0;
+  left: 0;
+  right: 0;
+  background: rgba(0, 0, 0, 0.2);
+}	
+
+/* header */
+
+#topbar {
+	.container {
+		padding:0;
+	}
+}
+
+.header {
+	margin-top:15px;
+}
+.sitelogo img, .woocommerce-page .sitelogo img  {
+	width:100%;	
+	max-width:280px;
+	min-width:220px;
+}
+
+.sitename {
+	font-family: $headingFontFamily;
+	font-size: 6.0rem;
+}
+#headersubpage {
+    height:195px;
+	position:relative;
+    background-image: url(http://placehold.it/590x195);
+    background-position: right;
+    background-repeat: no-repeat;
+	.sitenamebg {
+	position:absolute;
+	right:0px;
+	top:0px;
+    }
+	.sitename {
+	position:absolute;
+	top:10px;
+    }
+}
+
+/* menu */
+
+// all nav
+.navbar {
+    font-family: $headingFontFamily; 
+    margin:0;
+    z-index:99;
+    background: none; 
+	border:none;
+	li{	font-size:2.0rem;}
+}
+.navbar-default, .navbar-default .navbar-nav>li>a {
+	color:$bodyFont;
+}
+.navbar-default .navbar-nav>.active>a, .navbar-default .navbar-nav>.active>a:hover, .navbar-default .navbar-nav>.active>a:focus {
+    background-color: white;
+    color:$secondaryColour;
+} 
+.navbar-default .navbar-nav>li>a:hover, .navbar-default .navbar-nav>li>a:focus{
+    color:$emphasisColour;
+} 
+.navbar-default .navbar-collapse {
+    border: none;
+}
+
+// mainnav
+.navbar .navbar-nav {
+  display: inline-block;
+  float: none;
+  vertical-align: top;
+}
+.navbar .navbar-collapse  {
+  text-align: center;
+}
+.mainnav {
+	border-top:1px solid $primaryColour;
+	border-bottom:1px solid $primaryColour;
+	border-radius:0;
+}
+body.home .mainnav {
+	border:none;
+}
+
+/* stop main menu from scrolling when it reaches top of screen */
+.mainmenuFixed {  
+    z-index: 99;
+    position: fixed;
+    top: 0;
+	left:0;
+    width: 100%;
+	background-color:white;
+	min-height:52px;
+} 
+.mainnavLogo {
+	display:none;
+	position:fixed;
+	top:-20px;
+	z-index:999;
+}
+.mainnavLogo img {
+	background:white;
+	width:89px;	
+}
+/* hide home icon to make room for logo */
+@media only screen and (min-width : 768px) and (max-width : 992px) {
+	.fa-home:before {
+		display:none;
+		}
+}
+
+
+// topnav
+#topnav {
+	float:right;
+	li {
+		font-size:14px;
+	}
+}
+ul#menu-topmenu a {
+    background:none;
+	color:$primaryColourText;
+}
+ul#menu-topmenu a:hover {
+    background:none;
+	text-decoration:underline;
+}
+/* fix top menu to top of screen 
+div#topbar {
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 9999;
+}
+header {
+	margin-top:60px
+}
+*/
+
+// responsive menu
+
+.navbar-default .navbar-toggle {
+	border-color:$primaryColour;
+}
+.navbar-default .navbar-toggle .icon-bar {
+	background-color:$primaryColour;
+}
+.navbar .navbar-collapse, .navbar-default .navbar-toggle:hover, .navbar-default .navbar-toggle:focus {
+	background-color:white;
+}
+
+/* footer */
+
+#prefooter {
+	.container {padding:5px 0;}
+}
+#footer {
+    min-height:210px;
+	text-align:left;
+    margin-top:10px;
+	border-top:1px solid $primaryColour;
+	li {
+	list-style-type:none;
+	margin-left:-40px;
+	color:white;
+	}
+	a {
+	
+	}
+	h2 {
+    text-transform:uppercase;
+	}
+}
+
+.copyright { 
+	margin-top:40px;
+}
+
+.designedBy {background-image: url(../img/designedbysprite.jpg);
+	background-position:0 0;
+	width:89px;
+	height:29px;
+	float:right;
+	background-repeat:no-repeat;
+	overflow:hidden;
+	margin-top:30px;
+}
+.designedBy:hover{background-image: url(../img/designedbysprite.jpg);
+	background-position:0 -29px;
+}
+
+/* forms */
+
+.form-group {
+	.form-control {
+		width:240px;
+		margin-right:20px;
+	}
+}
+
+
+
+/* site social icons */
+
+#footer .social-links {
+	margin:10px 0 0 -40px;
+    h2 {
+    position: absolute;
+    margin-left: -9999px; 
+    }
+    li {
+        margin-left:0;
+		margin-right:15px;
+		list-style:none;
+		display:inline;
+    }
+    li a {
+        overflow: hidden; 
+     }
+    .fa:hover {
+        color: $emphasisColour;
+		text-decoration:none;
+    }
+    .fa {
+        color: $secondaryColour; 
+        font-size: 2.4rem;
+    }
+}
+
+
+/* buttons */
+
+.btn {
+	background-color:$deemphasisColour;
+	color:$deemphasisColourText;
+	font-size:1.8rem;
+	@include border-radius(25px);
+	:hover {
+	background-color:$emphasisColour;
+	color:$emphasisColourText;
+	}
+	.fa {
+	padding-left:10px;
+	}
+}
+
+
+
+
+
+/* responsive adjustments */
+
+/* small phones */
+@media only screen and (max-width : 480px) {
+
+}
+
+/* Extra Small Devices, Tablets - col-xs-x */
+@media only screen and (max-width : 768px) {
+	.navbar .navbar-collapse {
+		text-align: right;
+	}
+	#topnav .navbar-nav>li {
+		float: left;
+	}
+	#topnav .navbar-nav {
+		padding-right:15px;
+	}
+}
+/* Small Devices, Desktops - col-sm-x  */
+@media only screen and (min-width : 768px) {
+	.navbar {
+		margin-bottom:0px;
+	}
+}
+/* Medium Devices, Wide Screens - col-md-x */
+@media only screen and (min-width : 992px) {
+
+}
+/* Larger Devices, Wide Screens - col-ld-x */
+@media only screen and (min-width : 1200px) {
+
+}
+
+
