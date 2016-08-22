@@ -66,7 +66,7 @@ Template Name: homepage
  		<section>
 			<div class="container">
 				<div class="row">	
-					<div class="col-md-12"><a name="shopsection"></a>
+					<div class="col-md-12"><a id="shopsection"></a>
 						<!-- Start the Loop. --> 
 						<?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
 						

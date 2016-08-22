@@ -46,15 +46,15 @@ var ss = {
     // Paranoia; check this is an A tag
     if (target.nodeName.toLowerCase() != 'a') return;
   
-    // Find the <a name> tag corresponding to this href
+    // Find the <a id> tag corresponding to this href
     // First strip off the hash (first character)
     anchor = target.hash.substr(1);
-    // Now loop all A tags until we find one with that name
+    // Now loop all A tags until we find one with that id
     var allLinks = document.getElementsByTagName('a');
     var destinationLink = null;
     for (var i=0;i<allLinks.length;i++) {
       var lnk = allLinks[i];
-      if (lnk.name && (lnk.name == anchor)) {
+      if (lnk.id && (lnk.id == anchor)) {
         destinationLink = lnk;
         break;
       }

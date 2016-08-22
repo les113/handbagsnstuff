@@ -12,7 +12,7 @@
 		li {
 			list-style: none;
 			margin-bottom: .618em;
-			margin-left: -1.618em;
+			margin-left: -1.618em; 
 
 			&:before {
     font-family:FontAwesome;
@@ -38,11 +38,18 @@
 }
 
 // widget price filter 
-.woocommerce .widget_price_filter .ui-slider .ui-slider-range, .woocommerce .widget_price_filter .ui-slider .ui-slider-handle {
+.woocommerce {
+	.widget_price_filter .ui-slider .ui-slider-range {
 	background-color: $deemphasisColour;
-}
-.woocommerce .widget_price_filter .price_slider_wrapper .ui-widget-content {
+	}
+	.widget_price_filter .price_slider_wrapper .ui-widget-content, .widget_price_filter .ui-slider .ui-slider-handle {
 	background-color: $emphasisColour;
+	}
+}
+
+// widget shop cart
+.woocommerce .widget_shopping_cart .total {
+	border-top:3px double $primaryColour;
 }
 
 // widgets general
@@ -73,22 +80,24 @@ h2.widgettitle {
 }
 
 // buttons
-.woocommerce #respond input#submit, .woocommerce a.button, .woocommerce button.button, .woocommerce input.button {
-	background-color:$secondaryColour;
-	color:$secondaryColourText;
-	border-radius:0;
-	font-weight:300;
-}
-.woocommerce a.button:hover, .woocommerce button.button:hover, .woocommerce input.button:hover {
+.woocommerce {
+	#respond input#submit, a.button, button.button, input.button {
+		background-color:$secondaryColour;
+		color:$secondaryColourText;
+		border-radius:0;
+		font-weight:300;
+	}
+	a.button:hover, button.button:hover, input.button:hover {
 	background-color:$emphasisColour;
 	color:$emphasisColourText;
-}
-.woocommerce #respond input#submit.alt, .woocommerce a.button.alt, .woocommerce button.button.alt, .woocommerce input.button.alt {
-	background-color:$emphasisColour;
-	color:$emphasisColourText;
-}
-.woocommerce #respond input#submit.alt:hover, .woocommerce a.button.alt:hover, .woocommerce button.button.alt:hover, .woocommerce input.button.alt:hover {
-	background:$vibrantColour;
+	}
+	#respond input#submit.alt, a.button.alt, button.button.alt, input.button.alt {
+		background-color:$emphasisColour;
+		color:$emphasisColourText;
+	}
+	#respond input#submit.alt:hover, a.button.alt:hover, button.button.alt:hover, input.button.alt:hover {
+		background:$vibrantColour;
+	}
 }
 button.single_add_to_cart_button.button.alt {
 	background:$vibrantColour;
@@ -168,12 +177,11 @@ ins {
 	.term-description {
 		position:absolute;
 		top:105px;
-		padding:20px 80px;
+		padding:40px 100px;
 		width:100%;
 	}
 	.term-description p {
 		font-size:20px;
-		margin-top:20px;
 		color:white;
 		text-align:center;
 	}
@@ -224,36 +232,44 @@ h1.product_title {
 
 // tabs
 .woocommerce div.product .woocommerce-tabs ul.tabs {
-	padding:0 0 0 5px;
-}
-.woocommerce div.product .woocommerce-tabs ul.tabs li {
-	background: $secondaryColour;
-	border-radius:0;
-	position:initial;
-}
-.woocommerce div.product .woocommerce-tabs ul.tabs li.active {
-	background:#fff;
-}
-.woocommerce div.product .woocommerce-tabs ul.tabs li:hover {
-	background: $emphasisColour;
-}
-.woocommerce div.product .woocommerce-tabs ul.tabs li a:hover {
-	color:$secondaryColourText;
-}
-.woocommerce div.product .woocommerce-tabs ul.tabs li:after, .woocommerce div.product .woocommerce-tabs ul.tabs li:before{
-	border-bottom-left-radius:0;
-	border-bottom-right-radius:0;
-}
-.woocommerce div.product .woocommerce-tabs ul.tabs li a {
-	color:$secondaryColourText;
-	font-weight:300;
+		padding:0 0 0 5px;
+	 li {
+		background: $secondaryColour;
+		border-radius:0;
+		position:initial;
+	}
+	li.active {
+		background:#fff;
+	}
+	li:hover {
+		background: $emphasisColour;
+	}
+	li a:hover {
+		color:$secondaryColourText;
+	}
+	li:after, li:before{
+		border-bottom-left-radius:0;
+		border-bottom-right-radius:0;
+	}
+	li a {
+		color:$secondaryColourText;
+		font-weight:300;
+	}
 }
 .woocommerce div.product .woocommerce-tabs ul.tabs:before {
-	border:none;;
+	border:none;
 }
 
 
 /* Small Devices, Desktops - col-sm-x  */
+@media only screen and (max-width : 600px) {
+// category page 
+	.woocommerce .term-description {
+		display:none;
+	}
+}
+
+/* larger devices and desktops  */
 @media only screen and (min-width : 768px) {
 	// force shop page to 3 columns
 	#shopprimary ul.products li.product {

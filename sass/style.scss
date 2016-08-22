@@ -13,7 +13,7 @@ h1, h2, h3, h4, h4, h5, h6 {
 	margin:20px 0;
 }
 
-h1 {font-size: 2.4rem; color:$emphasisColour;} // 2.4rem = 24px
+h1 {font-size: 2.4rem; color:$emphasisColour;} // 2.4rem = 24px 
 h2 {font-size: 2.0rem; color:$emphasisColour;}
 h3 {font-size: 1.8rem; color:$bodyFont;}
 h4 {font-size: 1.6rem;}
@@ -21,6 +21,17 @@ h5 {font-size: 1.4rem;}
 h6 {font-size: 1.2rem;}
 p, li {font-size: 1.4rem;} 
 a {	color:$link;}
+
+
+h1, h2 {
+    display: inline-block;
+    border-bottom: 1px solid $primaryColour;
+    padding-bottom: 10px;
+}
+.slideshow .caption, .slideshow .shopbtn h2, h1.page-title, footer h2.widgettitle  {
+	border:none;
+}
+
 
 /* content */
 
@@ -408,7 +419,11 @@ header {
 }
 
 
+/* plugins */
 
+button#catapultCookie {
+	color:black;
+}
 
 
 /* responsive adjustments */

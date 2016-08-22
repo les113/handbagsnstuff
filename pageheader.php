@@ -2,7 +2,7 @@
 	<!-- top menu -->	
 	<div id="topbar" class="wrapTopmenu">
 		<div class="container">
-			<nav id="" class="col-md-12 textRight navbar navbar-default">
+			<nav class="col-md-12 textRight navbar navbar-default">
 				<div class="" id="topnav">
 					<?php /* function for dropdown menu */
 						wp_nav_menu( array(
@@ -36,10 +36,10 @@
 		<div class="container">	
 			<div class="mainnavLogo">
 				<div class="marginTop marginBottom">
-					<a href="<?php echo site_url(); ?>/index.php"><img alt="Logo" src="<?php bloginfo( 'template_url' ); ?>/img/logo.png" /></a>
+					<a href="<?php echo site_url(); ?>/index.php"><img alt="Logo" src="<?php bloginfo( 'template_url' ); ?>/img/logoSml.png" /></a>
 				</div>
 			</div>	
-		  <nav id="" class="col-md-12 mainnav navbar navbar-default ">
+		  <nav class="col-md-12 mainnav navbar navbar-default">
 			<!-- Brand and toggle get grouped for better mobile display -->
 			<div class="navbar-header">
 			  <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#mainnav">
