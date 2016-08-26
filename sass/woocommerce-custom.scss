@@ -260,6 +260,13 @@ h1.product_title {
 	border:none;
 }
 
+// info 
+.woocommerce-info {
+	border-top-color:$emphasisColour;
+}
+.woocommerce-info:before {
+	color:$emphasisColour;
+}
 
 /* Small Devices, Desktops - col-sm-x  */
 @media only screen and (max-width : 600px) {
@@ -274,5 +281,8 @@ h1.product_title {
 	// force shop page to 3 columns
 	#shopprimary ul.products li.product {
 		width:30.8%;  // 3 columns
+	}
+	#shopprimary .related ul.products li.product {
+		width:29.5%;  // 3 columns
 	}
 }

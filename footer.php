@@ -101,6 +101,15 @@
 	});
 	</script>
 	
+	<!-- temp swop images for placeholders -->
+	<script>
+		$(document).ready(function() {
+			$('img').attr('src', 'http://placehold.it/1x1');
+			$('img').attr('srcset', 'http://placehold.it/1x1');
+			$('img').attr('data-image-src', 'http://placehold.it/1x1');
+		});
+	</script>
+	
 <!-- statcounter -->
 <?php include('inc/statcounter.php') ?>
 	

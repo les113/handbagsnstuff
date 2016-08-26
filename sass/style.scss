@@ -12,7 +12,6 @@ h1, h2, h3, h4, h4, h5, h6 {
     letter-spacing: 1px;
 	margin:20px 0;
 }
-
 h1 {font-size: 2.4rem; color:$emphasisColour;} // 2.4rem = 24px 
 h2 {font-size: 2.0rem; color:$emphasisColour;}
 h3 {font-size: 1.8rem; color:$bodyFont;}
@@ -21,8 +20,6 @@ h5 {font-size: 1.4rem;}
 h6 {font-size: 1.2rem;}
 p, li {font-size: 1.4rem;} 
 a {	color:$link;}
-
-
 h1, h2 {
     display: inline-block;
     border-bottom: 1px solid $primaryColour;
@@ -32,9 +29,7 @@ h1, h2 {
 	border:none;
 }
 
-
 /* content */
-
 #content { 
     min-height:500px;
 	li {
@@ -42,10 +37,7 @@ h1, h2 {
 	} 
 }
 
-
-
 /* misc */
-
 section {
 	margin:10px 0;
 	}
@@ -76,8 +68,7 @@ section {
 	text-align:center;
 }
 
-/* wraps */
-
+// wraps 
 .wrapTopmenu{
     background:$primaryColour;
 }
@@ -89,8 +80,7 @@ section {
     background: #fff;
 }
 
-/* slideshow */
-
+// metaslider slideshow NOT USED 
 .slideshow {
 	position:relative;
 	// metaslider plugin
@@ -140,7 +130,8 @@ section {
     z-index: 99;
 	}
 }
-	// fixed hero image
+
+// hero image
 .slideshow {
 	.heroimage {
 		background: no-repeat center center fixed; 
@@ -156,13 +147,10 @@ section {
 	}
 }
 
-
-
-// dimmed overlay for cat images
+// dimmed overlay for category images
 .dimmed {
   position: relative;
 }
-
 .dimmed:before {
   content: " ";
   z-index: 10;
@@ -182,7 +170,6 @@ section {
 		padding:0;
 	}
 }
-
 .header {
 	margin-top:15px;
 }
@@ -191,7 +178,6 @@ section {
 	max-width:280px;
 	min-width:220px;
 }
-
 .sitename {
 	font-family: $headingFontFamily;
 	font-size: 6.0rem;
@@ -238,51 +224,6 @@ section {
     border: none;
 }
 
-// mainnav
-.navbar .navbar-nav {
-  display: inline-block;
-  float: none;
-  vertical-align: top;
-}
-.navbar .navbar-collapse  {
-  text-align: center;
-}
-.mainnav {
-	border-top:1px solid $primaryColour;
-	border-bottom:1px solid $primaryColour;
-	border-radius:0;
-}
-body.home .mainnav {
-	border:none;
-}
-
-/* stop main menu from scrolling when it reaches top of screen */
-.mainmenuFixed {  
-    z-index: 99;
-    position: fixed;
-    top: 0;
-	left:0;
-    width: 100%;
-	background-color:white;
-	min-height:52px;
-} 
-.mainnavLogo {
-	display:none;
-	position:fixed;
-	top:-20px;
-	z-index:999;
-}
-.mainnavLogo img {
-	background:white;
-	width:89px;	
-}
-/* hide home icon to make room for logo */
-@media only screen and (min-width : 768px) and (max-width : 992px) {
-	.fa-home:before {
-		display:none;
-		}
-}
-
 
 // topnav
 #topnav {
@@ -299,6 +240,7 @@ ul#menu-topmenu a:hover {
     background:none;
 	text-decoration:underline;
 }
+
 /* fix top menu to top of screen 
 div#topbar {
     position: fixed;
@@ -311,16 +253,90 @@ header {
 }
 */
 
-// responsive menu
-
-.navbar-default .navbar-toggle {
-	border-color:$primaryColour;
+// mainnav
+.navbar .navbar-nav {
+  display: inline-block;
+  float: none;
+  vertical-align: top;
 }
-.navbar-default .navbar-toggle .icon-bar {
-	background-color:$primaryColour;
+.navbar .navbar-collapse  {
+  text-align: center;
 }
-.navbar .navbar-collapse, .navbar-default .navbar-toggle:hover, .navbar-default .navbar-toggle:focus {
+.mainnav {
+	border-top:1px solid $primaryColour;
+	border-bottom:1px solid $primaryColour;
+	border-radius:0;
 	background-color:white;
+}
+body.home .mainnav {
+	border:none;
+}
+
+// responsive menu
+.navbar-default {
+	.navbar-toggle {
+		border-color:$primaryColour;
+	}
+	.navbar-toggle .icon-bar {
+		background-color:$primaryColour;
+	}
+	.navbar .navbar-collapse, .navbar-toggle:hover, .navbar-toggle:focus {
+		background-color:white;
+	}
+}
+
+/* fix mainnav to top of screen when scrolled */
+.mainmenuFixed {  
+    z-index: 99;
+    position: fixed;
+    top: 0;
+	left:0;
+    width: 100%;
+	min-height:60px;
+	background-color:$primaryColour;
+	box-shadow: 1px 1px 10px #000;
+	// mainnav
+	.mainnav {
+		background-color:$primaryColour;
+	}
+	.navbar-nav > li > a {
+		color:white;
+	}
+	.navbar-nav>.active>a,.navbar-nav>.active>a:hover, .navbar-nav>.active>a:focus {
+		background-color: $primaryColour;
+		color:black;
+	} 
+	.navbar-nav>li>a:hover, .navbar-nav>li>a:focus{
+		color:black;
+	} 
+	// responsive menu
+	.navbar-toggle {
+		border-color:white;
+	}
+	.navbar-toggle .icon-bar {
+		background-color:white;
+	}
+	.navbar .navbar-collapse, .navbar-toggle:hover, .navbar-toggle:focus {
+		background-color:$primaryColour;
+	}
+} 
+// fixed menu logo
+.mainnavLogo {
+	display:none;
+	position:fixed;
+	top:-20px;
+	z-index:999;
+}
+.mainnavLogo img {
+	height:50px;
+	margin-top:4px;	
+}
+
+/* hide home icon to make room for logo */
+@media only screen and (min-width : 768px) and (max-width : 992px) {
+	.fa-home:before {
+		display:none;
+		}
 }
 
 /* footer */
@@ -345,11 +361,9 @@ header {
     text-transform:uppercase;
 	}
 }
-
 .copyright { 
 	margin-top:40px;
 }
-
 .designedBy {background-image: url(../img/designedbysprite.jpg);
 	background-position:0 0;
 	width:89px;
@@ -364,7 +378,6 @@ header {
 }
 
 /* forms */
-
 .form-group {
 	.form-control {
 		width:240px;
@@ -372,10 +385,7 @@ header {
 	}
 }
 
-
-
 /* site social icons */
-
 #footer .social-links {
 	margin:10px 0 0 -40px;
     h2 {
@@ -403,7 +413,6 @@ header {
 
 
 /* buttons */
-
 .btn {
 	background-color:$deemphasisColour;
 	color:$deemphasisColourText;
@@ -419,8 +428,7 @@ header {
 }
 
 
-/* plugins */
-
+/* wordpress plugins */
 button#catapultCookie {
 	color:black;
 }
@@ -459,5 +467,6 @@ button#catapultCookie {
 @media only screen and (min-width : 1200px) {
 
 }
+
 
 

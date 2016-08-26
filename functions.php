@@ -151,7 +151,7 @@ if (is_product_category()){
     echo $image;
 }
 
-// Change number or products per row to 3  
+/* Change number of products per row to 3 */
 add_filter('loop_shop_columns', 'loop_columns');
 if (!function_exists('loop_columns')) {
 	function loop_columns() {
