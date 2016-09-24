@@ -43,6 +43,12 @@
 	'before_widget' => '',
 	'after_widget' => '',
 ) );
+	register_sidebar( array(
+	'name' => __( 'homepagefeatures' ),
+	'id' => 'sidebar-8',
+	'before_widget' => '',
+	'after_widget' => '',
+) );
 
 
 /* menus */
@@ -101,7 +107,14 @@ add_filter( 'style_loader_src', '_remove_script_version', 15, 1 );
 // autosave interval
 define('AUTOSAVE_INTERVAL', 300); // seconds
 
-// revisions - number of revsions defined in wp-config
+// revisions - number of revisions defined in wp-config
+
+// use shortcode in widgets
+add_filter('widget_text', 'do_shortcode');
+
+
+
+
 
 /****** woocommerce  ******/
 
@@ -158,5 +171,8 @@ if (!function_exists('loop_columns')) {
 		return 3; // 3 products per row
 	}
 }
+
+// Display 3 products per page
+add_filter( 'loop_shop_per_page', create_function( '$cols', 'return 9;' ), 20 );
 
 ?>

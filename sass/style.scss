@@ -67,6 +67,7 @@ section {
 .textCenter {
 	text-align:center;
 }
+a.anchor{display: block; position: relative; top: -50px; visibility: hidden;} /* offset scroll anchors */
 
 // wraps 
 .wrapTopmenu{
@@ -149,19 +150,22 @@ section {
 
 // dimmed overlay for category images
 .dimmed {
-  position: relative;
+	position: relative;
 }
 .dimmed:before {
-  content: " ";
-  z-index: 10;
-  display: block;
-  position: absolute;
-  height: 100%;
-  top: 0;
-  left: 0;
-  right: 0;
-  background: rgba(0, 0, 0, 0.2);
+	content: " ";
+	z-index: 10;
+	display: block;
+	position: absolute;
+	height: 100%;
+	top: 0;
+	left: 0;
+	right: 0;
+	background: rgba(0, 0, 0, 0.2);
 }	
+.dimmed:hover:before {
+	background: rgba(0, 0, 0, 0.8);
+}
 
 /* header */
 
@@ -175,8 +179,7 @@ section {
 }
 .sitelogo img, .woocommerce-page .sitelogo img  {
 	width:100%;	
-	max-width:280px;
-	min-width:220px;
+	max-width:240px;
 }
 .sitename {
 	font-family: $headingFontFamily;
@@ -203,7 +206,7 @@ section {
 
 // all nav
 .navbar {
-    font-family: $headingFontFamily; 
+    font-family:$headingFontFamily; 
     margin:0;
     z-index:99;
     background: none; 
@@ -328,7 +331,7 @@ body.home .mainnav {
 	z-index:999;
 }
 .mainnavLogo img {
-	height:50px;
+	height:50px !important;
 	margin-top:4px;	
 }
 
@@ -363,6 +366,9 @@ body.home .mainnav {
 }
 .copyright { 
 	margin-top:40px;
+}
+.regoffice {
+	font-size:0.9em;
 }
 .designedBy {background-image: url(../img/designedbysprite.jpg);
 	background-position:0 0;

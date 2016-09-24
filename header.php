@@ -21,7 +21,7 @@
 	// Add the blog description for the home/front page.
 	$site_description = get_bloginfo( 'description', 'display' );
 	if ( $site_description && ( is_home() || is_front_page() ) )
-		echo " | $site_description";
+		echo " $site_description";
 	?>
 	</title>
     
@@ -42,9 +42,9 @@
     <link rel="stylesheet" href="<?php bloginfo( 'template_url' ); ?>/font-awesome-4.2.0/css/font-awesome.min.css" >
 
     <!-- fonts -->
-	<link href='https://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
-	<link href='https://fonts.googleapis.com/css?family=Playfair+Display' rel='stylesheet' type='text/css'>
-
+	<link href="https://fonts.googleapis.com/css?family=Playfair+Display" rel="stylesheet">
+	<link href='https://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet'>
+	
     <!-- stylesheets -->
     <link rel="stylesheet" href="<?php bloginfo( 'template_url' ); ?>/css/style.css">
 

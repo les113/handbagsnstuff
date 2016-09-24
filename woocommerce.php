@@ -30,8 +30,8 @@
 						<div class="col-md-3" id="shopsidebar">
 
 							<!-- Sidebar --> 
-							<?php //get_sidebar(); ?>
-							<?php dynamic_sidebar( 'sidebar-1' ); ?>					
+							<?php get_sidebar(); ?>
+			
 						</div> 
 					</div>
 				</div>

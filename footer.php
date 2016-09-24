@@ -32,6 +32,11 @@
 						<div><a href="http://www.lamtha2.co.uk" target="_blank"><span class="designedBy"></span></a></div>
 					</div>
 				</div>
+				<div class="row">
+                    <div class="col-sm-12">
+					   <p class="regoffice marginTop">Registered office 71 - 75 Shelton Street, Covent Garden, London WC2H 9JQ. Company number 10214003.</p>
+                    </div>
+				</div>
 			</footer>
 		</div> <!-- end container -->
     </div> <!-- end wrapper -->
@@ -101,14 +106,14 @@
 	});
 	</script>
 	
-	<!-- temp swop images for placeholders -->
+	<!-- temp swop images for placeholders
 	<script>
 		$(document).ready(function() {
 			$('img').attr('src', 'http://placehold.it/1x1');
 			$('img').attr('srcset', 'http://placehold.it/1x1');
 			$('img').attr('data-image-src', 'http://placehold.it/1x1');
 		});
-	</script>
+	</script> -->
 	
 <!-- statcounter -->
 <?php include('inc/statcounter.php') ?>

@@ -26,7 +26,7 @@ Template Name: homepage
 					<?php 
 						//echo do_shortcode("[metaslider id=38]"); 
 					?>
-					<div class="shopbtnwrap"><div class="shopbtn"><a href="#shopsection"><h2>SHOP</h2></a></div></div>
+					<div class="shopbtnwrap"><div class="shopbtn"><a href="#welcome"><h2>SHOP</h2></a></div></div>
 				</div>
 			</div>
 		</div>
@@ -35,7 +35,7 @@ Template Name: homepage
 		<section>
 			<div class="container">
 				<div class="row">	
-					<div  class="col-md-12 textCenter">
+					<div  class="col-md-12 textCenter"><a id="welcome" class="anchor"></a>
 						<!-- Start the Loop. --> 
 						<?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
 
@@ -66,31 +66,15 @@ Template Name: homepage
  		<section>
 			<div class="container">
 				<div class="row">	
-					<div class="col-md-12"><a id="shopsection"></a>
+					<div class="col-md-12"><a id="shopsection" class="anchor"></a>
 						<!-- Start the Loop. --> 
 						<?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
 						
 						<!-- product categories -->
-						<?php echo do_shortcode("[product_categories number='2' parent='0' columns='2']"); ?>
+						<?php echo do_shortcode("[product_categories number='3' parent='0' columns='3']"); ?>
 						
 						<div class="featuredprods">						
-						<!-- removed 
-						<h2>All products in a specific category</h2>-->
-						<?php //echo do_shortcode("[product_category category='clutch-bags' per_page='4']"); ?>
-						
-						<h2>Recently Added Products</h2>
-						<?php echo do_shortcode("[recent_products per_page='4' columns='4']"); ?>
-
-						<h2>Featured Products</h2>
-						<?php echo do_shortcode("[featured_products per_page='4' columns='4']"); ?>
-						
-						<h2>Products on sale</h2>
-						<?php echo do_shortcode("[sale_products per_page='4']"); ?>
-
-						<!-- removed -->
-						<h2>Best Sellers</h2>
-						<?php echo do_shortcode("[best_selling_products per_page='4']"); ?>
-						
+							<?php dynamic_sidebar( 'sidebar-8' ); ?>
 						</div>
 						
 						<!-- Stop The Loop (but note the "else:" - see next line). -->
