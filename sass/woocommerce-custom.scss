@@ -128,7 +128,7 @@ ins {
 }
 
 // star rating
-.woocommerce .star-rating {
+.woocommerce .star-rating, .woocommerce .stars a {
 	color:$vibrantColour;
 }
 .woocommerce .star-rating:before {

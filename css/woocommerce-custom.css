@@ -109,7 +109,7 @@ ins {
   font-size: 1.2em; }
 
 /* line 131, ../sass/woocommerce-custom.scss */
-.woocommerce .star-rating {
+.woocommerce .star-rating, .woocommerce .stars a {
   color: #55A0B2; }
 
 /* line 134, ../sass/woocommerce-custom.scss */

@@ -74,32 +74,22 @@ section {
   margin-bottom: 20px; }
 
 /* line 50, ../sass/style.scss */
-.picleft img {
-  float: left;
-  margin-right: 20px; }
-
-/* line 54, ../sass/style.scss */
-.picright img {
-  float: right;
-  margin-left: 20px; }
-
-/* line 58, ../sass/style.scss */
 .clearfix {
   clear: both; }
 
-/* line 61, ../sass/style.scss */
+/* line 53, ../sass/style.scss */
 .textRight {
   text-align: right; }
 
-/* line 64, ../sass/style.scss */
+/* line 56, ../sass/style.scss */
 .textLeft {
   text-align: left; }
 
-/* line 67, ../sass/style.scss */
+/* line 59, ../sass/style.scss */
 .textCenter {
   text-align: center; }
 
-/* line 70, ../sass/style.scss */
+/* line 62, ../sass/style.scss */
 a.anchor {
   display: block;
   position: relative;
@@ -107,28 +97,60 @@ a.anchor {
   visibility: hidden; }
 
 /* offset scroll anchors */
-/* line 73, ../sass/style.scss */
+/* wordpress alignments */
+/* line 66, ../sass/style.scss */
+img.alignright {
+  float: right;
+  margin: 0 0 1em 1em; }
+
+/* line 67, ../sass/style.scss */
+img.alignleft {
+  float: left;
+  margin: 0 1em 1em 0; }
+
+/* line 68, ../sass/style.scss */
+img.aligncenter {
+  display: block;
+  margin-left: auto;
+  margin-right: auto; }
+
+/* line 69, ../sass/style.scss */
+.alignright {
+  float: right; }
+
+/* line 70, ../sass/style.scss */
+.alignleft {
+  float: left; }
+
+/* line 71, ../sass/style.scss */
+.aligncenter {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center; }
+
+/* line 75, ../sass/style.scss */
 .wrapTopmenu {
   background: #8ABFCC; }
 
-/* line 76, ../sass/style.scss */
+/* line 78, ../sass/style.scss */
 .wrapMainmenu {
   background: #fff;
   height: 52px; }
 
-/* line 80, ../sass/style.scss */
+/* line 82, ../sass/style.scss */
 .wrapFooter {
   background: #fff; }
 
-/* line 85, ../sass/style.scss */
+/* line 87, ../sass/style.scss */
 .slideshow {
   position: relative; }
-  /* line 88, ../sass/style.scss */
+  /* line 90, ../sass/style.scss */
   .slideshow .metaslider .caption-wrap {
     opacity: 1;
     background: rgba(1, 1, 1, 0.4);
     top: 0; }
-  /* line 93, ../sass/style.scss */
+  /* line 95, ../sass/style.scss */
   .slideshow .caption {
     color: #fff;
     font-size: 48px;
@@ -138,37 +160,37 @@ a.anchor {
     text-align: center;
     position: absolute;
     top: 35%; }
-  /* line 103, ../sass/style.scss */
+  /* line 105, ../sass/style.scss */
   .slideshow .shopbtnwrap {
     position: absolute;
     top: 60%;
     width: 100%;
     text-align: center; }
-  /* line 109, ../sass/style.scss */
+  /* line 111, ../sass/style.scss */
   .slideshow .shopbtn {
     width: 160px;
     margin: 0 auto;
     border: 1px solid white; }
-  /* line 114, ../sass/style.scss */
+  /* line 116, ../sass/style.scss */
   .slideshow .shopbtn h2 {
     margin: 10px 20px;
     color: #fff; }
-  /* line 118, ../sass/style.scss */
+  /* line 120, ../sass/style.scss */
   .slideshow .shopbtn a:hover {
     text-decoration: none; }
-  /* line 122, ../sass/style.scss */
+  /* line 124, ../sass/style.scss */
   .slideshow .flex-control-paging li a.flex-active, .slideshow .flex-control-paging li a:hover {
     background: #8ABFCC; }
-  /* line 125, ../sass/style.scss */
+  /* line 127, ../sass/style.scss */
   .slideshow .flex-control-paging li a {
     background: white; }
-  /* line 128, ../sass/style.scss */
+  /* line 130, ../sass/style.scss */
   .slideshow ol.flex-control-nav.flex-control-paging {
     position: absolute;
     bottom: 20px;
     z-index: 99; }
 
-/* line 137, ../sass/style.scss */
+/* line 139, ../sass/style.scss */
 .slideshow .heroimage {
   background: no-repeat center center fixed;
   -webkit-background-size: cover;
@@ -177,15 +199,15 @@ a.anchor {
   background-size: cover;
   height: 500px;
   background: rgba(1, 1, 1, 0.4); }
-/* line 146, ../sass/style.scss */
+/* line 148, ../sass/style.scss */
 .slideshow .caption {
   top: 20%; }
 
-/* line 152, ../sass/style.scss */
+/* line 154, ../sass/style.scss */
 .dimmed {
   position: relative; }
 
-/* line 155, ../sass/style.scss */
+/* line 157, ../sass/style.scss */
 .dimmed:before {
   content: " ";
   z-index: 10;
@@ -197,88 +219,88 @@ a.anchor {
   right: 0;
   background: rgba(0, 0, 0, 0.2); }
 
-/* line 166, ../sass/style.scss */
+/* line 168, ../sass/style.scss */
 .dimmed:hover:before {
   background: rgba(0, 0, 0, 0.8); }
 
 /* header */
-/* line 173, ../sass/style.scss */
+/* line 175, ../sass/style.scss */
 #topbar .container {
   padding: 0; }
 
-/* line 177, ../sass/style.scss */
+/* line 179, ../sass/style.scss */
 .header {
   margin-top: 15px; }
 
-/* line 180, ../sass/style.scss */
+/* line 182, ../sass/style.scss */
 .sitelogo img, .woocommerce-page .sitelogo img {
   width: 100%;
   max-width: 240px; }
 
-/* line 184, ../sass/style.scss */
+/* line 186, ../sass/style.scss */
 .sitename {
   font-family: "Playfair Display", serif;
   font-size: 6.0rem; }
 
-/* line 188, ../sass/style.scss */
+/* line 190, ../sass/style.scss */
 #headersubpage {
   height: 195px;
   position: relative;
   background-image: url(http://placehold.it/590x195);
   background-position: right;
   background-repeat: no-repeat; }
-  /* line 194, ../sass/style.scss */
+  /* line 196, ../sass/style.scss */
   #headersubpage .sitenamebg {
     position: absolute;
     right: 0px;
     top: 0px; }
-  /* line 199, ../sass/style.scss */
+  /* line 201, ../sass/style.scss */
   #headersubpage .sitename {
     position: absolute;
     top: 10px; }
 
 /* menu */
-/* line 208, ../sass/style.scss */
+/* line 210, ../sass/style.scss */
 .navbar {
   font-family: "Playfair Display", serif;
   margin: 0;
   z-index: 99;
   background: none;
   border: none; }
-  /* line 214, ../sass/style.scss */
+  /* line 216, ../sass/style.scss */
   .navbar li {
     font-size: 2.0rem; }
 
-/* line 216, ../sass/style.scss */
+/* line 218, ../sass/style.scss */
 .navbar-default, .navbar-default .navbar-nav > li > a {
   color: #333; }
 
-/* line 219, ../sass/style.scss */
+/* line 221, ../sass/style.scss */
 .navbar-default .navbar-nav > .active > a, .navbar-default .navbar-nav > .active > a:hover, .navbar-default .navbar-nav > .active > a:focus {
   background-color: white;
   color: #FB9BBF; }
 
-/* line 223, ../sass/style.scss */
+/* line 225, ../sass/style.scss */
 .navbar-default .navbar-nav > li > a:hover, .navbar-default .navbar-nav > li > a:focus {
   color: #FE519C; }
 
-/* line 226, ../sass/style.scss */
+/* line 228, ../sass/style.scss */
 .navbar-default .navbar-collapse {
   border: none; }
 
-/* line 232, ../sass/style.scss */
+/* line 234, ../sass/style.scss */
 #topnav {
   float: right; }
-  /* line 234, ../sass/style.scss */
+  /* line 236, ../sass/style.scss */
   #topnav li {
     font-size: 14px; }
 
-/* line 238, ../sass/style.scss */
+/* line 240, ../sass/style.scss */
 ul#menu-topmenu a {
   background: none;
   color: #fff; }
 
-/* line 242, ../sass/style.scss */
+/* line 244, ../sass/style.scss */
 ul#menu-topmenu a:hover {
   background: none;
   text-decoration: underline; }
@@ -294,39 +316,39 @@ header {
 	margin-top:60px
 }
 */
-/* line 260, ../sass/style.scss */
+/* line 262, ../sass/style.scss */
 .navbar .navbar-nav {
   display: inline-block;
   float: none;
   vertical-align: top; }
 
-/* line 265, ../sass/style.scss */
+/* line 267, ../sass/style.scss */
 .navbar .navbar-collapse {
   text-align: center; }
 
-/* line 268, ../sass/style.scss */
+/* line 270, ../sass/style.scss */
 .mainnav {
   border-top: 1px solid #8ABFCC;
   border-bottom: 1px solid #8ABFCC;
   border-radius: 0;
   background-color: white; }
 
-/* line 274, ../sass/style.scss */
+/* line 276, ../sass/style.scss */
 body.home .mainnav {
   border: none; }
 
-/* line 280, ../sass/style.scss */
+/* line 282, ../sass/style.scss */
 .navbar-default .navbar-toggle {
   border-color: #8ABFCC; }
-/* line 283, ../sass/style.scss */
+/* line 285, ../sass/style.scss */
 .navbar-default .navbar-toggle .icon-bar {
   background-color: #8ABFCC; }
-/* line 286, ../sass/style.scss */
+/* line 288, ../sass/style.scss */
 .navbar-default .navbar .navbar-collapse, .navbar-default .navbar-toggle:hover, .navbar-default .navbar-toggle:focus {
   background-color: white; }
 
 /* fix mainnav to top of screen when scrolled */
-/* line 292, ../sass/style.scss */
+/* line 294, ../sass/style.scss */
 .mainmenuFixed {
   z-index: 99;
   position: fixed;
@@ -336,75 +358,75 @@ body.home .mainnav {
   min-height: 60px;
   background-color: #8ABFCC;
   box-shadow: 1px 1px 10px #000; }
-  /* line 302, ../sass/style.scss */
+  /* line 304, ../sass/style.scss */
   .mainmenuFixed .mainnav {
     background-color: #8ABFCC; }
-  /* line 305, ../sass/style.scss */
+  /* line 307, ../sass/style.scss */
   .mainmenuFixed .navbar-nav > li > a {
     color: white; }
-  /* line 308, ../sass/style.scss */
+  /* line 310, ../sass/style.scss */
   .mainmenuFixed .navbar-nav > .active > a, .mainmenuFixed .navbar-nav > .active > a:hover, .mainmenuFixed .navbar-nav > .active > a:focus {
     background-color: #8ABFCC;
     color: black; }
-  /* line 312, ../sass/style.scss */
+  /* line 314, ../sass/style.scss */
   .mainmenuFixed .navbar-nav > li > a:hover, .mainmenuFixed .navbar-nav > li > a:focus {
     color: black; }
-  /* line 316, ../sass/style.scss */
+  /* line 318, ../sass/style.scss */
   .mainmenuFixed .navbar-toggle {
     border-color: white; }
-  /* line 319, ../sass/style.scss */
+  /* line 321, ../sass/style.scss */
   .mainmenuFixed .navbar-toggle .icon-bar {
     background-color: white; }
-  /* line 322, ../sass/style.scss */
+  /* line 324, ../sass/style.scss */
   .mainmenuFixed .navbar .navbar-collapse, .mainmenuFixed .navbar-toggle:hover, .mainmenuFixed .navbar-toggle:focus {
     background-color: #8ABFCC; }
 
-/* line 327, ../sass/style.scss */
+/* line 329, ../sass/style.scss */
 .mainnavLogo {
   display: none;
   position: fixed;
   top: -20px;
   z-index: 999; }
 
-/* line 333, ../sass/style.scss */
+/* line 335, ../sass/style.scss */
 .mainnavLogo img {
   height: 50px !important;
   margin-top: 4px; }
 
 /* hide home icon to make room for logo */
 @media only screen and (min-width: 768px) and (max-width: 992px) {
-  /* line 340, ../sass/style.scss */
+  /* line 342, ../sass/style.scss */
   .fa-home:before {
     display: none; } }
 /* footer */
-/* line 348, ../sass/style.scss */
+/* line 350, ../sass/style.scss */
 #prefooter .container {
   padding: 5px 0; }
 
-/* line 350, ../sass/style.scss */
+/* line 352, ../sass/style.scss */
 #footer {
   min-height: 210px;
   text-align: left;
   margin-top: 10px;
   border-top: 1px solid #8ABFCC; }
-  /* line 355, ../sass/style.scss */
+  /* line 357, ../sass/style.scss */
   #footer li {
     list-style-type: none;
     margin-left: -40px;
     color: white; }
-  /* line 363, ../sass/style.scss */
+  /* line 365, ../sass/style.scss */
   #footer h2 {
     text-transform: uppercase; }
 
-/* line 367, ../sass/style.scss */
+/* line 369, ../sass/style.scss */
 .copyright {
   margin-top: 40px; }
 
-/* line 370, ../sass/style.scss */
+/* line 372, ../sass/style.scss */
 .regoffice {
   font-size: 0.9em; }
 
-/* line 373, ../sass/style.scss */
+/* line 375, ../sass/style.scss */
 .designedBy {
   background-image: url(../img/designedbysprite.jpg);
   background-position: 0 0;
@@ -415,45 +437,45 @@ body.home .mainnav {
   overflow: hidden;
   margin-top: 30px; }
 
-/* line 382, ../sass/style.scss */
+/* line 384, ../sass/style.scss */
 .designedBy:hover {
   background-image: url(../img/designedbysprite.jpg);
   background-position: 0 -29px; }
 
 /* forms */
-/* line 388, ../sass/style.scss */
+/* line 390, ../sass/style.scss */
 .form-group .form-control {
   width: 240px;
   margin-right: 20px; }
 
 /* site social icons */
-/* line 395, ../sass/style.scss */
+/* line 397, ../sass/style.scss */
 #footer .social-links {
   margin: 10px 0 0 -40px; }
-  /* line 397, ../sass/style.scss */
+  /* line 399, ../sass/style.scss */
   #footer .social-links h2 {
     position: absolute;
     margin-left: -9999px; }
-  /* line 401, ../sass/style.scss */
+  /* line 403, ../sass/style.scss */
   #footer .social-links li {
     margin-left: 0;
     margin-right: 15px;
     list-style: none;
     display: inline; }
-  /* line 407, ../sass/style.scss */
+  /* line 409, ../sass/style.scss */
   #footer .social-links li a {
     overflow: hidden; }
-  /* line 410, ../sass/style.scss */
+  /* line 412, ../sass/style.scss */
   #footer .social-links .fa:hover {
     color: #FE519C;
     text-decoration: none; }
-  /* line 414, ../sass/style.scss */
+  /* line 416, ../sass/style.scss */
   #footer .social-links .fa {
     color: #FB9BBF;
     font-size: 2.4rem; }
 
 /* buttons */
-/* line 422, ../sass/style.scss */
+/* line 424, ../sass/style.scss */
 .btn {
   background-color: #FBD0E0;
   color: #333;
@@ -461,16 +483,16 @@ body.home .mainnav {
   -moz-border-radius: 25px;
   -webkit-border-radius: 25px;
   border-radius: 25px; }
-  /* line 427, ../sass/style.scss */
+  /* line 429, ../sass/style.scss */
   .btn :hover {
     background-color: #FE519C;
     color: #fff; }
-  /* line 431, ../sass/style.scss */
+  /* line 433, ../sass/style.scss */
   .btn .fa {
     padding-left: 10px; }
 
 /* wordpress plugins */
-/* line 438, ../sass/style.scss */
+/* line 440, ../sass/style.scss */
 button#catapultCookie {
   color: black; }
 
@@ -478,20 +500,20 @@ button#catapultCookie {
 /* small phones */
 /* Extra Small Devices, Tablets - col-xs-x */
 @media only screen and (max-width: 768px) {
-  /* line 452, ../sass/style.scss */
+  /* line 454, ../sass/style.scss */
   .navbar .navbar-collapse {
     text-align: right; }
 
-  /* line 455, ../sass/style.scss */
+  /* line 457, ../sass/style.scss */
   #topnav .navbar-nav > li {
     float: left; }
 
-  /* line 458, ../sass/style.scss */
+  /* line 460, ../sass/style.scss */
   #topnav .navbar-nav {
     padding-right: 15px; } }
 /* Small Devices, Desktops - col-sm-x  */
 @media only screen and (min-width: 768px) {
-  /* line 464, ../sass/style.scss */
+  /* line 466, ../sass/style.scss */
   .navbar {
     margin-bottom: 0px; } }
 /* Medium Devices, Wide Screens - col-md-x */

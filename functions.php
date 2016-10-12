@@ -164,15 +164,15 @@ if (is_product_category()){
     echo $image;
 }
 
-/* Change number of products per row to 3 */
+/* Change number of products per row */
 add_filter('loop_shop_columns', 'loop_columns');
 if (!function_exists('loop_columns')) {
 	function loop_columns() {
-		return 3; // 3 products per row
+		return 3; 
 	}
 }
 
-// Display 3 products per page
+// Number of products per page
 add_filter( 'loop_shop_per_page', create_function( '$cols', 'return 9;' ), 20 );
 
 ?>

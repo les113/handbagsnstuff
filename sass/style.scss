@@ -47,14 +47,6 @@ section {
 .marginBottom {
     margin-bottom:20px;
 }
-.picleft img {
-    float:left; 
-    margin-right:20px;
-}
-.picright img {
-    float:right; 
-    margin-left:20px;
-}
 .clearfix {
     clear:both;
 }
@@ -68,6 +60,16 @@ section {
 	text-align:center;
 }
 a.anchor{display: block; position: relative; top: -50px; visibility: hidden;} /* offset scroll anchors */
+
+
+/* wordpress alignments */
+img.alignright { float: right; margin: 0 0 1em 1em; }
+img.alignleft { float: left; margin: 0 1em 1em 0; }
+img.aligncenter { display: block; margin-left: auto; margin-right: auto; }
+.alignright { float: right; }
+.alignleft { float: left; }
+.aligncenter { display: block; margin-left: auto; margin-right: auto; text-align:center;}
+
 
 // wraps 
 .wrapTopmenu{
