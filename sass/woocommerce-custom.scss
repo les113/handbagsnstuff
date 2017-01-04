@@ -141,21 +141,20 @@ ins {
 }
 
 
-// homepage category images
-.woocommerce.columns-2 {
-	max-height:350px;
-	overflow:hidden;
-}
-.woocommerce.columns-3 {
+/* homepage category images */
+.woocommerce.columns-2 li.product-category.product {
 	max-height:300px;
 	overflow:hidden;
 }
-.woocommerce.columns-4 {
-	max-height:100%;
+.woocommerce.columns-3 li.product-category.product,
+.woocommerce.columns-4 li.product-category.product {
+	max-height:240px;
+	overflow:hidden;
 }
-.featuredprods {
-	margin-top:40px;
+.featuredprods h2.widgettitle {
+	margin-top:-20px;
 }
+
 
 // category page 
 .woocommerce {
@@ -202,7 +201,7 @@ ins {
 // category text
 li.product-category h3 {
     position: absolute;
-    top: 25%;
+    top: 33%;
     width: 100%;
     text-align: center;
     color: white;
@@ -263,20 +262,34 @@ h1.product_title {
 // info 
 .woocommerce-info {
 	border-top-color:$emphasisColour;
-}
+} 
 .woocommerce-info:before {
 	color:$emphasisColour;
 }
 
-
 // forms
-
 .woocommerce form.login, .woocommerce form.register {
 	max-width:500px;
 }
 input#coupon_code {
     width: 200px !important;
 }
+input, textarea, select {
+	border-color:$secondaryColour;
+}
+
+// pagination 
+.woocommerce nav.woocommerce-pagination ul {
+	border:1px solid $secondaryColour;
+}
+.woocommerce nav.woocommerce-pagination ul li {
+	border-right:1px solid $secondaryColour;
+}
+.woocommerce nav.woocommerce-pagination ul li span.current {
+	background-color:$secondaryColour !important;
+	color:$secondaryColourText !important;
+}
+
 
 /* Small Devices, Desktops - col-sm-x  */
 @media only screen and (max-width : 600px) {

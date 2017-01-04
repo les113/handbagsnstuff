@@ -70,8 +70,8 @@ Template Name: homepage
 						<!-- Start the Loop. --> 
 						<?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
 						
-						<!-- product categories -->
-						<?php echo do_shortcode("[product_categories number='3' parent='0' columns='3']"); ?>
+						<!-- product categories - moved into sidebar-8 widget -->
+						<?php // echo do_shortcode("[product_categories number='3' parent='0' columns='3']"); ?>
 						
 						<div class="featuredprods">						
 							<?php dynamic_sidebar( 'sidebar-8' ); ?>
